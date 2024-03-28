@@ -6,5 +6,5 @@ const create = document.querySelector(".create-acc")
 create.addEventListener('click',()=>{
     if(pass.value !== confirmPass.value){
         errordiv.textContent = "Password doesn't match!!"
-    }
+    }               
 })
