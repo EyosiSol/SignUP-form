@@ -1,42 +1,146 @@
-@import url('https://fonts.cdnfonts.com/css/norse');
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+@import url("https://fonts.cdnfonts.com/css/norse");
+:root {
+  --green: #184714;
+  --font: #050722d2;
 }
-body{
-    display: flex;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-.pic{
-    background: url(Images/Background.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 400vh;
-    position: relative;
+body {
+  display: flex;
 }
-.logo{
-    display: flex;
-    position: absolute;
-    top: 30%;
-    font-size: 5.8rem;
-    font-family: norse;
-    font-weight: 500;
-    color: white;
-    background-color: rgba(0,0,0,0.8);
-    width:100%;
-    padding: 1vw 0px;
+.pic {
+  background: url(Images/Background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 80%;
+  position: relative;
 }
-.logo > div{
-    display: flex;
-    padding-left: 7vw;
-    align-items: center;
+.logo {
+  display: flex;
+  position: absolute;
+  top: 30%;
+  font-size: 5.5rem;
+  font-family: norse;
+  font-weight: 600;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  padding: 1vw 0px;
 }
-.logo > div > img{
-    width: 15vh;
+.logo > div {
+  display: flex;
+  padding-left: 8vw;
+  align-items: center;
+}
+.logo > div > img {
+  width: 15vh;
 }
 .logo > div > p {
-    margin-top: 20px;
-    padding-left: 0.5vw;
+  margin-top: 20px;
+  padding-left: 0.5vw;
+}
+.container {
+  font-family: sans-serif;
+  padding: 10vh 0;
+  background-color: #f8faf8;
+}
+.text {
+  font-weight: 600;
+  padding: 0 10%;
+  padding-bottom: 2%;
+}
+.form {
+  background: white;
+  padding: 3% 6%;
+  height: fit-content;
+  text-transform: uppercase;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+legend {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--font);
+  margin-bottom: 20px;
+  padding-left: 4px;
+}
+.first-last,
+.address,
+.passRelated {
+  margin: 10px;
+  /* background-color: rebeccapurple; */
+  width: 45vw;
+  display: flex;
+  justify-content: space-between;
+}
+.first,
+.last,
+.email,
+.phonenumber,
+.pass,
+.Confirm-pass {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.first > label,
+.last > label,
+.email > label,
+.phonenumber > label,
+.pass > label,
+.Confirm-pass > label {
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: #6c6e6c;
+}
+
+input {
+  border: 0.1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: 240px;
+  height: 24px;
+  font-size: 0.8rem;
+  padding: 3px;
+  margin-top: 2px;
+}
+input:focus {
+  outline: 1px solid blue;
+}
+input:invalid {
+  outline: 1px solid red;
+}
+.error{
+    margin-top: -20px;
+    margin-left: 12px;
+    font-size: 0.6rem;
+    color: rgb(172, 20, 20);
+}
+.create{
+    margin-top: 50px;
+    margin-left: 50px
+}
+.create > button{
+    width: 12vw;
+    padding: 10px;
+    font-weight: bold;
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    background-color: var(--green);
+}
+.create > div > p{
+    font-size: 13px;
+    font-weight: bold;
+    color: #272b27;
+}
+.create > div > p > a{
+    color: #184714;
 }
